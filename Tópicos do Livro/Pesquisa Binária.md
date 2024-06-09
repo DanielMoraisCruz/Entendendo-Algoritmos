@@ -1,6 +1,30 @@
-- A Busca Binária é um Algoritmo que tem como entrada uma lista ordenada de elementos.
+- A Busca Binária é um [[Algoritmo]] que tem como entrada uma lista ordenada de elementos.
 - Se o elemento está na lista, essa busca retorna sua posição.
 	- Caso contrário, não retornará.
 - Pesquisa Estupida: Indo do menor para o maior, ou do inicio da lista até o fim.
 	- Complexidade O(n)
 - A pesquisa binária tem complexidade log(n)
+
+```python
+def pesquisa_binaria(lista, item):
+    baixo = 0
+    alto = len(lista) - 1
+    
+    while baixo <= alto:
+        meio = (baixo + alto) // 2
+        chute = lista[meio]
+        if chute == item:
+            return meio
+        if chute > item:
+            alto = meio - 1
+        else:
+            baixo = meio + 1
+    return None
+
+minha_lista = [1, 3, 5, 7, 9]
+print(pesquisa_binaria(minha_lista, 3)) 
+print(pesquisa_binaria(minha_lista, -1))
+```
+
+
+
