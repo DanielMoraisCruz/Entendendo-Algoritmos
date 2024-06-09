@@ -1,0 +1,6 @@
+- A Busca Binária é um Algoritmo que tem como entrada uma lista ordenada de elementos.
+- Se o elemento está na lista, essa busca retorna sua posição.
+	- Caso contrário, não retornará.
+- Pesquisa Estupida: Indo do menor para o maior, ou do inicio da lista até o fim.
+	- Complexidade O(n)
+- A pesquisa binária tem complexidade log(n)
