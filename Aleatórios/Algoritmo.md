@@ -1,1 +1,0 @@
-Um *[[Algoritmo]]* é um conjunto de instruções que realiza uma tarefa.

@@ -1,1 +1,0 @@
-A notação BigO permite que você calcule o número de operações
